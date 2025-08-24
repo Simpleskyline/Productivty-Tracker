@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Productivity Tracker</h1>
+
+        <section id="activity-section">
+            <h2>Activities</h2>
+            <form id="activity-form">
+                <input type="text" id="activity-name" placeholder="Activity name" required>
+                <input type="text" id="activity-desc" placeholder="Description">
+                <button type="submit">Add Activity</button>
+            </form>
+            <ul id="activity-list"></ul>
+        </section>
+
+        <section id="goal-section">
+            <h2>Goals</h2>
+            <form id="goal-form">
+                <input type="text" id="goal-title" placeholder="Goal title" required>
+                <input type="number" id="goal-target" placeholder="Target" required>
+                <select id="goal-period">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+                <button type="submit">Add Goal</button>
+            </form>
+            <ul id="goal-list"></ul>
+        </section>
+
+        <section id="reminder-section">
+            <h2>Reminders</h2>
+            <form id="reminder-form">
+                <input type="text" id="reminder-msg" placeholder="Reminder message" required>
+                <input type="datetime-local" id="reminder-time" required>
+                <button type="submit">Add Reminder</button>
+            </form>
+            <ul id="reminder-list"></ul>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

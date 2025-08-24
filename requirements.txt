@@ -1,0 +1,6 @@
+Flask==2.3.2
+Flask-SQLAlchemy==3.0.5
+Flask-Cors==4.0.0
+Flask-Migrate==4.0.4
+pydantic==1.10.7
+apscheduler==3.10.1
