@@ -31,8 +31,11 @@ Get reminders via notifications
 Track your progress visually
 
 🛠️ Tech Stack
+
 Frontend: HTML, CSS, JavaScript
+
 Backend: Flask (Python)
+
 Database: SQLite
 
 📂 Project Structure
