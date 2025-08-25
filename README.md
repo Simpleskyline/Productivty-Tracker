@@ -39,7 +39,9 @@ Backend: Flask (Python)
 Database: SQLite
 
 📂 Project Structure
+
 productivity-tracker/
+
 │── frontend/          
 │── backend/          
 │── database/          
